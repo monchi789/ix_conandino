@@ -1,3 +1,4 @@
+![Landing_Page](img/landing_page.png)
 # IX CONANDINO - Congreso Internacional de Administracion
 
 Este proyecto es una landing page para el IX CONANDINO Congreso Internacional de Administración, que se llevará a cabo en Cusco, Perú, del 20 al 22 de junio de 2024. La página web está diseñada para informar a los posibles asistentes sobre el congreso, su tema, sus oradores y cómo registrarse.
