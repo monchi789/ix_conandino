@@ -20,6 +20,9 @@ importers:
       astro:
         specifier: ^4.7.0
         version: 4.7.0(typescript@5.4.5)
+      simplycountdown.js:
+        specifier: ^1.7.0
+        version: 1.7.0
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.3
@@ -1715,6 +1718,9 @@ packages:
 
   simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+
+  simplycountdown.js@1.7.0:
+    resolution: {integrity: sha512-UB5LVDVRuVyawYsrosoQ8qOwSdK4JLX8njkmTy5y8ECBQ/h3HGCt6XdYAlMYVHfqQ9egp7dOHZzAjo7+FHYYAw==}
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -4087,6 +4093,8 @@ snapshots:
     dependencies:
       is-arrayish: 0.3.2
     optional: true
+
+  simplycountdown.js@1.7.0: {}
 
   sisteransi@1.0.5: {}
 

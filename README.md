@@ -34,7 +34,7 @@ El proyecto está estructurado de la siguiente manera:
   * `components`: Contiene los componentes reutilizables de la aplicación.
   * `pages`: Contiene las páginas de la aplicación.
   * `styles`: Contiene los estilos CSS de la aplicación.
-  * `utils`: Contiene utilidades que se utilizan en la aplicación.
+  * `scripts`: Contiene los scripts que se utilizan en la aplicación.
 * `public`: Contiene los archivos estáticos de la aplicación, como imágenes y fuentes.
 * `package.json`: Contiene las dependencias del proyecto y los scripts de ejecución.
 * `pnpm-lock.yaml`: Contiene la lista de dependencias instaladas y sus versiones exactas.
