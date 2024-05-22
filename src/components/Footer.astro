@@ -1,24 +1,28 @@
----
-import { Image } from "astro:assets";
-
-import logo from "../assets/images/Logo.png";
----
-
 <div class="bg-[#E2EFFB]">
-  <div class="items-center grid gap-x-20 gap-y-4 mx-5 md:grid-cols-3 md:mx-24 lg:mx-[12rem]">
-    <div class="flex flex-col items-center md:items-start">
-      <Image src={logo} alt="Logo" width='150' />
-      <p>Impacto de la transformación digital y la inteligencia Artificial en la Administración Pública y Privada</p>
+  <div
+    class="items-center grid gap-x-20 gap-y-4 mx-5 md:grid-cols-3 md:mx-24 lg:mx-[12rem]"
+  >
+    <div class="mt-4 flex flex-col items-center md:items-start">
+      <img
+        src="/src/assets/images/Logo.png"
+        alt="Logo del IX CONANDINO"
+        height={100}
+        width={100}
+      />
+      <p>
+        Impacto de la transformación digital y la inteligencia Artificial en la
+        Administración Pública y Privada
+      </p>
     </div>
     <div class="flex">
-      <ul class="hidden md:grid  md:grid-cols-1 font-semibold">
+      <ul class="hidden md:grid md:grid-cols-1 font-semibold">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Ponentes</a></li>
         <li><a href="#">Contactanos</a></li>
       </ul>
     </div>
     <div class="flex flex-col items-center md:items-start">
-      <p>+51 940576340</p>
+      <p>+51 940033003</p>
       <p>contacto@corladcusco.com</p>
     </div>
   </div>
