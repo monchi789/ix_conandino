@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
+import ImageLogo from "../assets/images/Logo.png";  
 ---
 
 <nav class="flex py-5 px-5 items-center justify-between md:mx-24 lg:mx-[12rem]">
-  <img
-    src="/src/assets/images/Logo.png"
+  <Image
+    src={ImageLogo}
     alt="Logo del IX CONANDINO"
     height={100} width={100}
   />
@@ -13,4 +15,6 @@
     <li><a href="#">Ponentes</a></li>
     <li><a href="#">Contactanos</a></li>
   </ul>
+  
 </nav>
+

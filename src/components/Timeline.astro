@@ -1,5 +1,18 @@
 ---
 import Speaker from "./Speaker.astro";
+
+import ImageCarlosLuna from "../assets/images/speakers/carlos-hugo-luna-rioja.png";
+import ImageWilfredoLomaquis from "../assets/images/speakers/wilfrido-lomaquis-peña.png";
+import ImageCarlosCavani from "../assets/images/speakers/carlos-cavani-grau.png";
+import ImageMauroTrigozo from "../assets/images/speakers/mauro-trigozo-paredes.png";
+import ImageRogelioBohn from "../assets/images/speakers/rogelio-bohn.png";
+import ImageProsperoSantiago from "../assets/images/speakers/santiago-rosales-alvarado.png"
+import ImageOscarMena from "../assets/images/speakers/oscar-mena-redondo.png";
+import ImageDicksonJhon from "../assets/images/speakers/dikson-jhon-encinas-herrera.png";
+import ImageEmigdioArchundia from "../assets/images/speakers/emigdio-archundia-fernandez.png";
+import ImageGilmarCamarco from "../assets/images/speakers/gilmar-camarco.png";
+import ImageVictorMarcerlo from "../assets/images/speakers/victor-marcelo-guillen-loayza.png";
+import ImageCarlosSantosMarin from "../assets/images/speakers/carlos-santos.png";
 ---
 
 <div class="lg:px-[15rem]">
@@ -15,35 +28,35 @@ import Speaker from "./Speaker.astro";
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         <Speaker
           time="10:30 - 11:30"
-          image="/src/assets/images/speakers/carlos-hugo-luna-rioja.png"
+          image={ImageCarlosLuna}
           description="Imagen de Carlos Hugo Luna Rioja"
           name="Lic. Carlos Hugo Luna Rioja"
           title='"Prospectiva estratégica para resultados: Un enfoque hacia la Sostenibilidad."'
         />
         <Speaker
           time="12:00 - 13:00"
-          image="/src/assets/images/speakers/wilfrido-lomaquis-peña.png"
+          image={ImageWilfredoLomaquis}
           description="Imagen de Wilfrido Lomaquis Peña"
           name="Lic. Wilfrido Lomaquis Peña"
           title='"Desafíos actuales en la Administración con la IA."'
         />
         <Speaker
           time="15:00 - 16:00"
-          image="/src/assets/images/speakers/carlos-cavani-grau.png"
+          image={ImageCarlosCavani}
           description="Imagen de Carlos Cavani"
           name="Dr. Carlos Cavani"
           title='"Consecuencias de la IA en la dirección estratégica del Marketing Global"'
         />
         <Speaker
           time="16:00 - 17:00"
-          image="/src/assets/images/speakers/mauro-trigozo-paredes.png"
+          image={ImageMauroTrigozo}
           description="Imagen de Mauro Trigozo Paredes"
           name="Mag. Mauro Trigozo Paredes"
           title='"Responsabilidad Ética en la Transformación Digital en el Sector Público del Estado"'
         />
         <Speaker
           time="17:30 - 18:30"
-          image="/src/assets/images/speakers/rogelio-bohn.png"
+          image={ImageRogelioBohn}
           description="Imagen de Rogelio Bohn"
           name="Dr. Rogelio Bohn"
           title='"Las Nuevas tendencias de Administración en la era digital."'
@@ -56,14 +69,14 @@ import Speaker from "./Speaker.astro";
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         <Speaker
           time="09:30 - 10:30"
-          image="/src/assets/images/speakers/santiago-rosales-alvarado.png"
+          image={ImageProsperoSantiago}
           description="Imagen de Prospero Santiago Rosales Humana"
           name="Mg. Prospero Santiago Rosales Humana"
           title='"Inteligencia Artificial  Vs Inteligencia Humana"'
         />
         <Speaker
           time="11:00 - 12:00"
-          image="/src/assets/images/speakers/oscar-mena-redondo.png"
+          image={ImageOscarMena}
           description="Imagen de Oscar Mena Redondo"
           name="Dr. Oscar Mena Redondo"
           title='"La epistemilogía del CEO, Jefe, Director, Gerente, Líder de líderes y del Manager."'
@@ -71,7 +84,7 @@ import Speaker from "./Speaker.astro";
 
         <Speaker
           time="12:00 - 13:00"
-          image="/src/assets/images/speakers/dikson-jhon-encinas-herrera.png"
+          image={ImageDicksonJhon}
           description="Imagen de Dikson Jhon Encinas Herrera"
           name="Dr. Dikson Jhon Encinas Herrera"
           title='"El carácter de la dirección."'
@@ -79,14 +92,14 @@ import Speaker from "./Speaker.astro";
 
         <Speaker
           time="15:00 - 16:00"
-          image="/src/assets/images/speakers/emigdio-archundia-fernandez.png"
+          image={ImageEmigdioArchundia}
           description="Imagen de Emigdio Archundia Fernández"
           name="Dr. Emigdio Archundia Fernández"
           title='"La información financiera un enfoque climático y analítico dentro del entorno de la inteligencia artificial."'
         />
         <Speaker
           time="16:30 - 17:30"
-          image="/src/assets/images/speakers/carlos-cavani-grau.png"
+          image={ImageGilmarCamarco}
           description="Imagen de Gilmar Camargo"
           name="Dr. Gilmar Camargo"
           title='"Visión gerencial de los impactos de la TD y la IA en la Administración."'
@@ -99,14 +112,14 @@ import Speaker from "./Speaker.astro";
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         <Speaker
           time="09:30 - 10:30"
-          image="/src/assets/images/speakers/victor-marcelo-guillen-loayza.png"
+          image={ImageVictorMarcerlo}
           description="Imagen de Victor Marcelo Guillen Loayza"
           name="Phd. Victor Marcelo Guillen Loayza"
           title='"La Administración y la Inteligencia Artificial."'
         />
         <Speaker
           time="11:00 - 12:00"
-          image="/src/assets/images/speakers/carlos-santos.png"
+          image={ImageCarlosSantosMarin}
           description="Imagen de Carlos Santos Marin"
           name="Dr. Carlos Santos Marin"
           title='"La administración en tiempos de disrupción."'

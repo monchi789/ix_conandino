@@ -1,0 +1,25 @@
+---
+import Check from "../assets/icons/check.astro";
+
+const { title, price, icon, list } = Astro.props;
+---
+
+<div class="flex flex-col bg-[#efefef] max-w-[20rem] p-4 rounded-xl">
+  <h3 class="font-bold text-center text-['hind'] text-[2rem] text-gray-800">
+    {title}
+  </h3>
+  <h3 class="text-center text-[2.7rem] font-bold">S/. {price}</h3>
+  <h3 class="mb-4 font-semibold text-['hind'] text-[1.1rem] text-gray-800">
+    Incluye:
+  </h3>
+  <div class="flex flex-col">
+    <ul>
+      <li class="flex gap-x-4 items-center">
+        <Check class="bg-[#dff2ff] text-white rounded-full" />
+        ddd
+      </li>
+    </ul>
+  </div>
+
+  <img src={icon.src} alt=`Imagen de ${title}`>
+</div>

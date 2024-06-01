@@ -12,7 +12,14 @@ const { image, description, name, title, time } = Astro.props;
     >{time}</time
   >
   <div class="flex gap-x-4">
-    <img class="rounded-full h-16 w-16" src={image} alt={description} />
+    {image ? (
+      <img class="rounded-full h-16 w-16" src={image.src} alt={description} />
+    ) : (
+      <div class="rounded-full h-16 w-16 bg-gray-200 flex items-center justify-center text-gray-500">
+        No Image
+      </div>
+    )}
+    <div class="flex flex-col justify-center">
     <div class="flex flex-col justify-center">
       <h3 class="text-lg font-semibold text-gray-900">
         {name}

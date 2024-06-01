@@ -1,0 +1,26 @@
+---
+import SingleTicket from "./SingleTicket.astro";
+
+
+// Images
+import Student from "../assets/icons/student.svg";
+
+---
+
+<div class="lg:px-[15rem]">
+  <h2
+    class="font-semibold mb-4 text-center text-['hind'] text-[#716F76] text-2xl md:mb-16 md:text-4xl lg:text-4xl"
+  >
+    Entradas
+  </h2>
+
+  <div class="">
+    <SingleTicket 
+    title="Estudiante"
+    price="120"
+    icon={Student}
+    list={["1", "2"]}
+    />
+  </div>
+
+</div>

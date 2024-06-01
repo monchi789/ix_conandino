@@ -1,10 +1,15 @@
+---
+import { Image } from "astro:assets"
+
+import ImageLogo from '../assets/images/Logo.png'
+---
 <div class="bg-[#E2EFFB]">
   <div
     class="items-center grid gap-x-20 gap-y-4 mx-5 md:grid-cols-3 md:mx-24 lg:mx-[12rem]"
   >
     <div class="mt-4 flex flex-col items-center md:items-start">
-      <img
-        src="/src/assets/images/Logo.png"
+      <Image
+        src={ImageLogo}
         alt="Logo del IX CONANDINO"
         height={100}
         width={100}
