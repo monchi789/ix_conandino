@@ -8,7 +8,7 @@ interface CountdownElements {
 class Countdown {
   private targetDate: Date;
   private countdownElements: CountdownElements;
-  private countdownInterval: number | null;
+  private countdownInterval: ReturnType<typeof setInterval> | null;
 
   constructor(targetDate: Date, elements: CountdownElements) {
     this.targetDate = targetDate;
@@ -66,7 +66,7 @@ const countdownElements: CountdownElements = {
   seconds: secondsElement!,
 };
 
-const targetDate = new Date("2024-06-08T08:00:00");
+const targetDate = new Date("2024-06-21T08:00:00");
 
 const countdown = new Countdown(targetDate, countdownElements);
 countdown.start();
