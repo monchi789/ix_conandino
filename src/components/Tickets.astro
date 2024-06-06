@@ -1,0 +1,82 @@
+---
+import SingleTicket from "./SingleTicket.astro";
+
+// Images
+import Student from "../assets/icons/student.svg";
+import Menber from "../assets/icons/menber.svg";
+import NotMenber from "../assets/icons/not-menber.svg";
+import Public from "../assets/icons/public.svg";
+---
+
+<div class="px-[3rem] md:px-[5rem] lg:px-[10rem]">
+  <h2
+    class="font-semibold mb-4 text-center text-['hind'] text-[#716F76] text-2xl md:mb-16 md:text-4xl lg:text-4xl"
+  >
+    Entradas
+  </h2>
+
+  <div
+    class="grid grid-cols-1 gap-y-2 md:grid-cols-2 md:gap-2 lg:grid-cols-4 lg:gap-x-2"
+  >
+    <SingleTicket
+      title="Estudiante"
+      price="120"
+      icon={Student}
+      list={[
+        "Fotocheck de participante del congreso.",
+        "Certificado (Virtual y/o Físico).",
+        "Ingreso libre los 3 dias del Congreso.",
+        "Material de registrado por los ponentes.",
+      ]}
+      color="#dff2ff"
+      text_color="#30494f"
+    />
+    <SingleTicket
+      title="Colegiados Habilitados"
+      price="200"
+      icon={Menber}
+      list={[
+        "Fotocheck de participante del congreso.",
+        "Certificado (Virtual y/o Físico).",
+        "Ingreso libre los 3 dias del Congreso.",
+        "Material de registrado por los ponentes.",
+      ]}
+      color="#7bd6fe"
+      text_color="#0a4c70"
+    />
+    <SingleTicket
+      title="Colegiados No Habilitados"
+      price="250"
+      icon={NotMenber}
+      list={[
+        "Fotocheck de participante del congreso.",
+        "Certificado (Virtual y/o Físico).",
+        "Ingreso libre los 3 dias del Congreso.",
+        "Material de registrado por los ponentes.",
+      ]}
+      color="#0aabed"
+      text_color="#dff2ff"
+    />
+    <SingleTicket
+      title="Publico General"
+      price="250"
+      icon={Public}
+      list={[
+        "Fotocheck de participante del congreso.",
+        "Certificado (Virtual y/o Físico).",
+        "Ingreso libre los 3 dias del Congreso.",
+        "Material de registrado por los ponentes.",
+      ]}
+      color="#0075b1"
+      text_color="#fff"
+    />
+  </div>
+
+  <div class="mt-8 text-center">
+    <h3 class="font-bold text-[#716F76]">Adquiere tus entradas ya!</h3>
+    <p>CCI: <spanc class="font-bold">00228519817977205153</spanc></p>
+  </div>
+  <div class="mt-4 text-center">
+    <p class="text-[#716F76] text-sm md:text-base">*Los precios incluyen IGV</p>
+  </div>
+</div>
