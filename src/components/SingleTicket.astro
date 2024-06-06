@@ -1,25 +1,47 @@
 ---
 import Check from "../assets/icons/check.astro";
 
-const { title, price, icon, list } = Astro.props;
+const { title, price, icon, list, color, text_color } = Astro.props;
 ---
 
-<div class="flex flex-col bg-[#efefef] max-w-[20rem] p-4 rounded-xl">
-  <h3 class="font-bold text-center text-['hind'] text-[2rem] text-gray-800">
+<div
+  style=`--bg-color: ${color}`
+  class="flex flex-col bg-[--bg-color] max-w-[20rem] p-4 rounded-xl"
+>
+  <h3
+    style=`--text-color: ${text_color}`
+    class="font-bold text-center text-[2rem] text-[--text-color]"
+  >
     {title}
   </h3>
-  <h3 class="text-center text-[2.7rem] font-bold">S/. {price}</h3>
-  <h3 class="mb-4 font-semibold text-['hind'] text-[1.1rem] text-gray-800">
+  <h3
+    style=`--text-color: ${text_color}`
+    class="text-center text-[2.7rem] font-bold text-[--text-color]"
+  >
+    S/. {price}
+  </h3>
+  <h3
+    style=`--text-color: ${text_color}`
+    class="mb-4 font-semibold text-[--text-color] text-[1.1rem]"
+  >
     Incluye:
   </h3>
   <div class="flex flex-col">
-    <ul>
-      <li class="flex gap-x-4 items-center">
-        <Check class="bg-[#dff2ff] text-white rounded-full" />
-        ddd
-      </li>
+    <ul class="flex flex-col gap-y-2">
+      {
+        list.map((data: string) => (
+          <li style={`--text-color: ${text_color}`} class="flex gap-x-4 items-start text-[--text-color]">
+            <Check style={`--text-color: ${text_color}`} class="text-[--text-color] rounded-full" />
+            {data}
+          </li>
+        ))
+      }
     </ul>
   </div>
 
-  <img src={icon.src} alt=`Imagen de ${title}`>
+  <img class="h-12 w-12 self-end" src={icon.src} alt={"Imagen de " + title} />
 </div>
+
+<style>
+  --text-color: ${text_color};
+</style>
