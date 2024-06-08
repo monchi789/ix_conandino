@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import ImageLogo from "../assets/images/Logo.png";  
 ---
 
-<nav class="flex py-5 px-5 items-center justify-between md:mx-24 lg:mx-[12rem]">
+<nav id="inicio" class="flex py-5 px-5 items-center justify-between md:mx-24 lg:mx-[12rem]">
   <Image
     src={ImageLogo}
     alt="Logo del IX CONANDINO"
@@ -11,9 +11,9 @@ import ImageLogo from "../assets/images/Logo.png";
   />
 
   <ul class="hidden md:flex md:gap-9">
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Ponentes</a></li>
-    <li><a href="#">Contactanos</a></li>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#cronograma">Ponentes</a></li>
+    <li><a href="#entradas">Entradas</a></li>
   </ul>
   
 </nav>

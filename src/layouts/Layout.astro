@@ -26,18 +26,7 @@ const { title } = Astro.props;
     background: #f9faff;
     background-size: 224px;
   }
-
-  /* Estilos para el botón de hamburguesa */
-  #menu-toggle {
-    @apply p-2 rounded-md text-gray-400 hover:text-gray-600;
-  }
-
-  /* Estilos para el menú de navegación */
-  #menu {
-    @apply flex flex-col md:flex-row md:items-center;
-  }
-
-  #menu > a {
-    @apply p-2 text-sm font-medium text-gray-700 hover:text-gray-900;
+  body {
+    scroll-behavior: smooth;
   }
 </style>

@@ -66,7 +66,7 @@ const countdownElements: CountdownElements = {
   seconds: secondsElement!,
 };
 
-const targetDate = new Date("2024-06-21T08:00:00");
+const targetDate = new Date("2024-06-20T08:00:00");
 
 const countdown = new Countdown(targetDate, countdownElements);
 countdown.start();
